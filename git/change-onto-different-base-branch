@@ -1,0 +1,13 @@
+If you created a branch based on let's say for example `develop`. 
+And then added a bunch of commits only to find out that you should had used `master` as your base branch. 
+You can easily rebase you branch using the `rebase --onto` command:
+
+```
+git rebase --onto new_base_branch old_base_branch current_branch
+```
+
+So in the example the command would be
+
+```
+git rebase --onto master develop branch-im-working-on
+```
